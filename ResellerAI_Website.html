@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ResellerAI</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f5f5f7}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;background:#fff;border-bottom:1px solid #ddd}
+.logo{font-size:28px;font-weight:bold}
+.logo-v,.logo-dot{color:#6D28D9}
+.shell{display:flex;min-height:calc(100vh - 70px)}
+.sidebar{width:240px;background:#fff;border-right:1px solid #ddd;padding:20px}
+.content{flex:1;padding:24px}
+.card,.form-panel,.drop-zone{background:#fff;border-radius:12px;padding:20px;border:1px solid #ddd}
+.drop-zone{height:250px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.cta-btn{padding:12px 18px;border:none;border-radius:8px;background:#6D28D9;color:#fff;cursor:pointer}
+.two-col{display:grid;grid-template-columns:320px 1fr;gap:24px}
+.price-grid{display:flex;justify-content:space-around;margin:20px 0}
+.price-val{font-size:28px;font-weight:bold}
+.tag{display:inline-block;background:#eee;padding:6px 10px;border-radius:20px;margin:4px}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="logo"><span class="logo-v">Reseller</span>AI<span class="logo-dot">.</span></div>
+  <input placeholder="ZIP or City..." />
+</div>
+
+<div class="shell">
+  <div class="sidebar">
+    <h3>Menu</h3>
+    <p>New Listing</p>
+    <p>Dashboard</p>
+    <p>Analytics</p>
+    <hr>
+    <h3>Active Markets</h3>
+    <p>Facebook</p>
+    <p>Poshmark</p>
+  </div>
+
+  <div class="content">
+    <div class="two-col">
+      <div>
+        <div class="drop-zone">Upload Product Photo</div>
+        <button class="cta-btn">Generate Listing</button>
+      </div>
+
+      <div>
+        <div class="form-panel">
+          <h2>AI Generated Listing</h2>
+          <p><b>Title:</b> Vintage 90s Levi's 501 Light Wash Denim Jeans</p>
+          <p><b>Brand:</b> Levi's</p>
+          <p><b>Condition:</b> Good</p>
+          <p>Classic straight leg 501s from the 1990s. Perfectly worn-in with slight fraying at the hems.</p>
+          <div>
+            <span class="tag">#vintage</span>
+            <span class="tag">#denim</span>
+            <span class="tag">#90s</span>
+            <span class="tag">#streetwear</span>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:20px">
+          <h2>Market Pricing Insight</h2>
+          <div class="price-grid">
+            <div><div class="price-val">$32</div><div>Low</div></div>
+            <div><div class="price-val">$48</div><div>Average</div></div>
+            <div><div class="price-val">$65</div><div>High</div></div>
+          </div>
+          <button class="cta-btn">Publish to Markets</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
